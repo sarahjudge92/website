@@ -1,0 +1,197 @@
+/* general style*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body {
+  font-family: 'Gruppo', cursive;
+  color: black;
+}
+@font-face {
+    font-family: rowo;
+    src: url(../font/rowo.ttf);
+}
+h1{
+  font-size: 100px;
+  color: #FFFAFA;
+  text-align: center;
+  font-family: rowo;
+}
+h2{
+  font-size: 35px;
+  text-align: center;
+}
+h3, h4, h5, h6 {
+  font-size: 20px;
+}
+p{
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color:black;
+}
+/*Header Styles*/
+header{
+  font-size: 30px;
+  text-align: center;
+}
+nav{
+  background-color: black;
+}
+nav a{
+  text-align:left;
+  font-size: 15px;
+  color: #FFFAFA;
+  padding-left:2%;
+  padding-right:2%;
+  transition:2s;
+}
+nav a:hover{
+  color:#106B8F;
+  text-decoration:underline;
+}
+.links a{
+  margin-left:2%;
+  margin-right:2%;
+}
+/* TOP OF PAGE STYLES*/
+.top-of-page{
+  background-image: url("../images/plane.jpg");
+  background-size: cover;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Homemade Apple', cursive;
+}
+
+
+/*Map Section Styles*/
+.map{
+
+}
+/*Recent Post Section Styles*/
+.recent-posts{
+  margin:2%;
+  padding:1%;
+}
+
+.recent-posts h3{
+  font-size: 25px;
+}
+/*Footer Section Styles*/
+footer a{
+  text-align:left;
+  font-size: 15px;
+  color: #FFFAFA;
+  padding-left:2%;
+  padding-right:2%;
+  transition:2s;
+}
+
+footer{
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+}
+/*STYLES SPECIFIC TO INDEX PAGE*/
+p.index{
+  font-size: 30px;
+  color: #FFFAFA;
+  text-align: center;
+  font-family: rowo
+}
+.post-images{
+  width: 100%;
+}
+
+/*STYLES SPECIFIC TO about PAGE*/
+.photo-about{
+  width: 30%
+}
+.about-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.about-page{
+  padding: 5%;
+  margin: 5%;
+}
+
+/*STYLES SPECIFIC TO CONTACT PAGE*/
+.contact-page{
+  height: 100vh;
+}
+form{
+  text-align: center;
+}
+label{
+  font-size: 20px;
+}
+
+input{
+  border: 2px solid black;
+  height: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content:center;
+}
+textarea{
+  border: 2px solid black;
+  height: 100px;
+  width: 100%;
+}
+button{
+  border: 2px solid black;
+  background-color:gray;
+  color: black;
+  font-size: 15px;
+  padding:5px 24px;
+  margin-top: 5%;
+  width: 100px;
+  border-radius: 8px;
+  text-align: center;
+  display:inline-block;
+  transition:2s;
+}
+
+button:hover{
+  background-color: #106B8F;
+  color: white;
+}
+/*STYLES SPECIFIC TO POST PAGE*/
+.post-page{
+  margin-left: 10%;
+}
+/*div, section{
+  border:1px black solid;
+  margin:0;
+  padding:0;
+  height:auto;
+}*/
+.p-image img {
+ width:100%;
+ margin:0;
+ padding:0;
+}
+.sidebar img{
+  width:100%;
+}
+/* BLOG POST PAGE STYLING*/
+.bContent img{
+  width:100%;
+}
+.posts-content{
+  margin-left:10%;
+}
+.posts-content h2{
+  padding-top:3%;
+  padding-bottom:3%;
+  text-align:left;
+}
