@@ -1,0 +1,38 @@
+---
+layout: default
+
+---
+
+    <section class="grid-spaceBetween post-page"><!--Main Content (everything inside the page is wrapped in this section)-->
+      <section class="grid col-8 post-content"><!--This is all of the post content-->
+        <h2 class="col-12">{{page.post-title}}</h2>
+        {% for section in page.sections %}
+        <div class="col-12 p-image">
+          <img src="{{section.image}}"/>
+        </div>
+        <div class="col-12">
+          <p>{{ section.text }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      <section class="col-3 sidebar"> <!--This is the sidebar-->
+        <div class="grid-spaceAround sidebar-container">
+        <h2 class="col-12">Related Posts</h2>
+        {% for post in site.posts limit:4 %}
+        <div class="col-12">
+          <div class="">
+            <a href="{{post.url}}"><h3>{{post.title}}</h3></a>
+            <p>{{post.description}}</p>
+          </div>
+          <div class="">
+            <a href="{{post.url}}"><img src="{{post.image}}"/></a>
+          </div>
+        </div>
+
+        {% endfor %}
+        <div class="col-10"> <img src="images/wall.jpg"/>
+          <p>About Author Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div><!--end of sidebar container-->
+      </section><!--sidebar ends here-->
+    </section><!--section for page ends here-->
