@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css"><!-- This is GRID-LEX -->
     <link <link href="https://fonts.googleapis.com/css?family=Gruppo|Homemade+Apple" rel="stylesheet"><!--This is your fonts from google-->
     <script src="https://use.fontawesome.com/b41a9d90be.js"></script><!--Font Awesome icons-->
+    <link href="/css/jqvmap.css" rel="stylesheet" type="text/css" /> <!--Link to JQV map-->
     <link href="/css/main.css" rel="stylesheet" type="text/css" /> <!--Link to your Stylesheeet (CSS)-->
   </head>
 
@@ -35,33 +36,30 @@
     </section>
 
     <section class="map"> <!--Interactive Map-->
-      <div id="vmap" style="width: 600px; height: 400px;"></div>
+      <div id="vmap" style="width: 100%; height: 500px;"></div>
     </section>
 
     <section class="grid recent-posts"> <!--Mid-section with recent posts links-->
       <h2 class="col-12"> Recent Posts</h2>
-      <div class="col-3 recent-container">
-        <a href="#"><img class="post-images" src="images/wall.jpg" alt="Wall"/></a>
-        <a href="#"> <h3>Post Title 1</h3></a>
+      
+      <div class="col-3_sm-6_xs-12 recent-container">
+        <a href="#"><img class="post-images" src="123" alt="this is an alt"/></a>
+        <a href="#"> <h3>This is a title</h3></a>
       </div>
-      <div class="col-3 recent-container">
-        <a href="#"><img class="post-images" src="images/wall.jpg" alt="Wall"/></a>
-        <a href="#"> <h3>Post Title 2</h3></a>
+
+      
+      <div class="col-3_sm-6_xs-12 recent-container">
+        <a href="#"><img class="post-images" src="456" alt="this is a different picture"/></a>
+        <a href="#"> <h3>another title</h3></a>
       </div>
-      <div class="col-3 recent-container">
-        <a href="#"><img class="post-images" src="images/wall.jpg" alt="Wall"/></a>
-        <a href="#"> <h3>Post Title 3</h3></a>
-      </div>
-      <div class="col-3 recent-container">
-        <a href="#"><img class="post-images" src="images/wall.jpg" alt="Wall"/></a>
-        <a href="#"> <h3>Post Title 4</h3></a>
-      </div>
+
+      
     </section>
 
     <footer><!---Footer Starts Here-->
 
       <div class="ig"><!-- SnapWidget -->
-        <iframe src="https://snapwidget.com/embed/380999" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:200%; height:200px"></iframe>
+        <iframe src="https://snapwidget.com/embed/380999" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden; width:100%; height:200px"></iframe>
       </div>
 
       <div class="icons"> <!--Social Media Links-->
@@ -76,7 +74,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery.vmap.js"></script>
     <script src="js/jquery.vmap.world.js"></script>
-    <script src="js/jquery.vmap.sampledata.js"></script>
     <script src="/js/main.js"></script>
 
   </body><!--Closing Body TAG, Nothing should be written after this-->

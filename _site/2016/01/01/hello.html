@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.3.1/gridlex.min.css"><!-- This is GRID-LEX -->
     <link <link href="https://fonts.googleapis.com/css?family=Gruppo|Homemade+Apple" rel="stylesheet"><!--This is your fonts from google-->
     <script src="https://use.fontawesome.com/b41a9d90be.js"></script><!--Font Awesome icons-->
+    <link href="/css/jqvmap.css" rel="stylesheet" type="text/css" /> <!--Link to JQV map-->
     <link href="/css/main.css" rel="stylesheet" type="text/css" /> <!--Link to your Stylesheeet (CSS)-->
   </head>
 
@@ -28,7 +29,7 @@
       </nav> <!--End of the NAV-->
     </header><!--Header Ends here-->
         <section class="grid-spaceBetween post-page"><!--Main Content (everything inside the page is wrapped in this section)-->
-      <section class="grid col-8 post-content"><!--This is all of the post content-->
+      <section class="grid col-8_sm-12 post-content"><!--This is all of the post content-->
         <h2 class="col-12"></h2>
         
         <div class="col-12 p-image">
@@ -46,9 +47,20 @@
         </div>
         
       </section>
-      <section class="col-3 sidebar"> <!--This is the sidebar-->
+      <section class="col-3_sm-12 sidebar"> <!--This is the sidebar-->
         <div class="grid-spaceAround sidebar-container">
         <h2 class="col-12">Related Posts</h2>
+        
+        <div class="col-12">
+          <div class="">
+            <a href="/2017/01/01/second-post.html"><h3>second post</h3></a>
+            <p></p>
+          </div>
+          <div class="">
+            <a href="/2017/01/01/second-post.html"><img src=""/></a>
+          </div>
+        </div>
+
         
         <div class="col-12">
           <div class="">
@@ -82,7 +94,7 @@
     <footer><!---Footer Starts Here-->
 
       <div class="ig"><!-- SnapWidget -->
-        <iframe src="https://snapwidget.com/embed/380999" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:200%; height:200px"></iframe>
+        <iframe src="https://snapwidget.com/embed/380999" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden; width:100%; height:200px"></iframe>
       </div>
 
       <div class="icons"> <!--Social Media Links-->
@@ -97,7 +109,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/jquery.vmap.js"></script>
     <script src="js/jquery.vmap.world.js"></script>
-    <script src="js/jquery.vmap.sampledata.js"></script>
     <script src="/js/main.js"></script>
 
   </body><!--Closing Body TAG, Nothing should be written after this-->

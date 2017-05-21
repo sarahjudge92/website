@@ -4,7 +4,7 @@ layout: default
 ---
 
     <section class="grid-spaceBetween post-page"><!--Main Content (everything inside the page is wrapped in this section)-->
-      <section class="grid col-8 post-content"><!--This is all of the post content-->
+      <section class="grid col-8_sm-12 post-content"><!--This is all of the post content-->
         <h2 class="col-12">{{page.post-title}}</h2>
         {% for section in page.sections %}
         <div class="col-12 p-image">
@@ -15,7 +15,7 @@ layout: default
         </div>
         {% endfor %}
       </section>
-      <section class="col-3 sidebar"> <!--This is the sidebar-->
+      <section class="col-3_sm-12 sidebar"> <!--This is the sidebar-->
         <div class="grid-spaceAround sidebar-container">
         <h2 class="col-12">Related Posts</h2>
         {% for post in site.posts limit:4 %}
